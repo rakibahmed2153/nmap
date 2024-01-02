@@ -1,0 +1,11 @@
+NMAP:
+-----------------------
+Nmap is a network scanning tool—an open source Linux command-line tool—used for network exploration, host discovery, and security auditing.
+
+NMAP Website ~ https://nmap.org/docs.html
+
+Nmap Labs:
+-----------------------
+
+1. scanme.nmap.org
+2. ginandjuice.shop
