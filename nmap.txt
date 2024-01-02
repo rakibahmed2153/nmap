@@ -4,8 +4,26 @@ Nmap is a network scanning tool—an open source Linux command-line tool—used 
 
 NMAP Website ~ https://nmap.org/docs.html
 
+
 Nmap Labs:
 -----------------------
 
 1. scanme.nmap.org
 2. ginandjuice.shop
+
+
+STATE
+------
+OPEN = send SYNC and get the ACK and last CLOSED
+FILTERED = Filtered will firewalls SYN given but not RESET
+CLOSED = Send a TCP RESET
+
+
+Commands and Details
+---------------------
+
+nmap -h => Help options to get all the commands details
+nmap -p[],[] => Specific ports scan
+     -p1-100 => Set range of ports to scan
+     [Range]
+     -p-    => Scan all the ports one by one. Its also time consuming
