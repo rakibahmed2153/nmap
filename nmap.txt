@@ -13,7 +13,8 @@ Nmap Labs:
 
 
 STATE
-------
+----------------------
+
 OPEN = send SYNC and get the ACK and last CLOSED
 FILTERED = Filtered will firewalls SYN given but not RESET
 CLOSED = Send a TCP RESET
@@ -22,8 +23,20 @@ CLOSED = Send a TCP RESET
 Commands and Details
 ---------------------
 
-nmap -h => Help options to get all the commands details
+nmap -h      => Help options to get all the commands details
 nmap -p[],[] => Specific ports scan
      -p1-100 => Set range of ports to scan
      [Range]
-     -p-    => Scan all the ports one by one. Its also time consuming
+     -p-     => Scan all the ports one by one. Its also time consuming
+nmap -sn     => Ping Scan [what devices are active in that subnet][ICMP ping scan][used sudo to send ICMP ping request]
+nmap --top-ports [20] [ip] => top 20 will check
+nmap -Pn     => If ping is filtered then port scan will be occurs
+nmap -vv     => verbos mode scan
+nmap -dd     => debugging mode scan
+
+OS Fingerprinting and Aggressive Scanning
+
+sudo nmap -O     => Operating system scan
+sudo nmap -A     => Aggressive Scan
+sudo nmap -sS    => Fully Complete the handshake and scan
+
