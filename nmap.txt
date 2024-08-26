@@ -15,9 +15,9 @@ Nmap Labs:
 STATE
 ----------------------
 
-OPEN = send SYNC and get the ACK and last CLOSED
+OPEN     = send SYNC and get the ACK and last CLOSED
 FILTERED = Filtered will firewalls SYN given but not RESET
-CLOSED = Send a TCP RESET
+CLOSED   = Send a TCP RESET
 
 
 Commands and Details
